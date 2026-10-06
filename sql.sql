@@ -1,6 +1,6 @@
-- 1. Crear la base de datos (PostgreSQL no acepta "IF NOT EXISTS" aquí)
+-- 1. Crear la base de datos (PostgreSQL no acepta "IF NOT EXISTS" aquí)
 -- Nota: Debes ejecutar esto por separado si tu herramienta no permite crear y cambiar de BD en el mismo script.
-CREATE DATABASE mundo_cobayas;
+
 
 -- 2. Crear la tabla de cobayas
 -- Cambiamos AUTO_INCREMENT por SERIAL o IDENTITY
