@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Cobaya - El rincón de los cobayos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>🐹 Mundo Cobaya</h1>
+        <p>Aprende sobre tus cobayas y registra a tus pequeñas mascotas</p>
+    </header>
+
+    <main class="container">
+        <!-- Sección informativa -->
+        <section class="info-section">
+            <h2>Acerca de las Cobayas</h2>
+            <p>Las cobayas (o cuyes) son pequeños roedores herbívoros conocidos por su carácter dócil, sociabilidad y variados tipos de pelaje. Requieren una dieta rica en heno, alimento fresco y vitamina C.</p>
+            
+            <h3>Razas comunes:</h3>
+            <ul>
+                <li><strong>Americana:</strong> Pelo corto y liso.</li>
+                <li><strong>Abisinia:</strong> Pelo con rosetas o remolinos.</li>
+                <li><strong>Peruana:</strong> Pelo largo y sedoso.</li>
+                <li><strong>Teddy:</strong> Pelo corto, denso y afelpado.</li>
+            </ul>
+        </section>
+
+        <!-- Formulario de registro -->
+        <section class="form-section">
+            <h2>Registra a tu Cobaya</h2>
+            <form id="guineaPigForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre de la Cobaya:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Pipo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="raza">Raza / Tipo:</label>
+                    <select id="raza" name="raza" required>
+                        <option value="">-- Selecciona una raza --</option>
+                        <option value="Americana">Americana</option>
+                        <option value="Abisinia">Abisinia</option>
+                        <option value="Peruana">Peruana</option>
+                        <option value="Teddy">Teddy</option>
+                        <option value="Coronet">Coronet</option>
+                        <option value="Skinny">Skinny (Sin pelo)</option>
+                        <option value="Otra">Otra</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="edad">Edad (meses):</label>
+                    <input type="number" id="edad" name="edad" min="1" max="120" placeholder="Ej. 12" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dueno">Nombre del Dueño/a:</label>
+                    <input type="text" id="dueno" name="dueno" placeholder="Ej. María" required>
+                </div>
+
+                <button type="submit">Registrar Mascotita</button>
+            </form>
+        </section>
+
+        <!-- Lista de cobayas registradas -->
+        <section class="list-section">
+            <h2>Cobayas Registradas</h2>
+            <ul id="cobayasList" class="cards-grid">
+                <!-- Se llenará dinámicamente con JS -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="java.js"></script>
+</body>
+</html>
